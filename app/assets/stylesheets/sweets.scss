@@ -1,3 +1,197 @@
 // Place all the styles related to the sweets controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+html {
+  font-size: 100%;
+}
+body{
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+  line-height: 1.7;
+  color: #432;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* HEADER
+------------------------------- */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+.logo {
+  width: 300px;
+}
+.main-nav {
+  display: flex;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin-top: 34px;
+  list-style: none;
+}
+.main-nav li {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.main-nav a {
+  font-family: 'Philosopher', serif;
+  background-color: chocolate;
+  color: whitesmoke;
+  border-radius: 5px;
+  padding: 18px 32px;
+}
+.main-nav a:hover {
+  background-color: brown;
+}
+/* 大きな背景画像 */
+.big-bg {
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/* 見出し */
+.page-title {
+  font-size: 3rem;
+  font-family: 'Philosopher', serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  text-transform: none;
+}
+p {
+ font-size: 20px;
+ font-family: 'Philosopher', serif;
+ margin: 30px 0;
+}
+
+/* ボタン */
+.button {
+  font-size: 1.375rem;
+  font-family: 'Philosopher', serif;
+  background-color: chocolate;
+  color: whitesmoke;
+  border-radius: 5px;
+  padding: 18px 32px;
+}
+.button:hover {
+  background: brown;
+}
+
+/* MAIN
+------------------------------- */
+.main-content {
+  max-width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+.main-content .page-title {
+  text-align: center;
+}
+.menu-content p {
+  font-size: 1.125rem;
+  margin: 10px 0 0;
+}
+
+.grid {
+display: grid;
+gap: 26px;
+grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+margin-top: 4%;
+margin-bottom: 50px;
+}
+.grid-image {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+/* フッター */
+footer {
+  background-color: chocolate;
+  text-align: center;
+  padding: 25px 0;
+}
+
+footer p {
+  color: aliceblue;
+  font-size: 0.875rem;
+}
+/* モバイル版
+------------------------------- */
+@media (max-width: 600px) {
+  .page-title {
+      font-size: 2.5rem;
+  }
+  .page-header {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  /* HEADER */
+  .main-nav {
+      font-size: 1rem;
+      margin-top: 10px;
+  }
+  .main-nav li {
+      margin: 0 20px;
+  }
+
+  /* HOME */
+  .home-content {
+      margin-top: 20%;
+  }
+
+  /* NEWS */
+  .news-contents {
+      flex-direction: column;
+  }
+  article,
+  aside {
+      width: 100%;
+  }
+  #news .page-title {
+      margin-top: 30px;
+  }
+  aside {
+      margin-top: 60px;
+  }
+  .post-info {
+      margin-bottom: 30px;
+  }
+  .post-date {
+      width: 70px;
+      height: 70px;
+      font-size: 1rem;
+  }
+  .post-date span {
+      font-size: 0.875rem;
+      padding-top: 2px;
+  }
+  .post-title {
+      font-size: 1.375rem;
+  }
+  .post-cat {
+      font-size: 0.875rem;
+      margin-top: 10px;
+  }
+  .post-title,
+  .post-cat {
+      margin-left: 80px;
+  }
+
+  .menu-content {
+      margin-top: 20%;
+  }
+
+}
