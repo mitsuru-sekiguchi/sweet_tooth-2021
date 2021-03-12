@@ -1,24 +1,40 @@
-# README
+## users テーブル
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+| Column        | Type      | Options     |
+| --------------| ----------| ------------|
+| nickname      | string    | null: false |
+| email         | string    | null: false |
 
-Things you may want to cover:
+### Association
 
-* Ruby version
+- has_many :sweets
+- has_many :comments
 
-* System dependencies
+## sweets テーブル
 
-* Configuration
+| Column          | Type       | Options          |
+| ----------------| -----------| -----------------|
+| name            | string     | null: false      |
+| price           | integer    | null: false      |
+| shop_info       | string     | null: false      |
+| text            | text       |                  |
+| user            | references | foreign_key:true |
 
-* Database creation
 
-* Database initialization
+### Association
 
-* How to run the test suite
+- belongs_to :user
+- has_many   :comments
 
-* Services (job queues, cache servers, search engines, etc.)
+## comments テーブル
 
-* Deployment instructions
+| Column          | Type       | Options          |
+| ----------------| -----------| -----------------|
+| text            | text       | null: false      |
+| user            | references | foreign_key:true |
+| item            | references | foreign_key:true |
 
-* ...
+### Association
+
+- belongs_to :user
+- belongs_to :sweet
