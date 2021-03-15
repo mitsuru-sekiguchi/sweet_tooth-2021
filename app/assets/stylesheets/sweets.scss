@@ -5,10 +5,13 @@ html {
   font-size: 100%;
 }
 body{
+  background: url('syukuhuku.jpg') center top no-repeat;
+  background-size: cover;
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
   line-height: 1.7;
   color: #432;
 }
+
 a {
   text-decoration: none;
 }
@@ -30,6 +33,7 @@ img {
 }
 .logo {
   width: 300px;
+
 }
 .main-nav {
   display: flex;
@@ -69,7 +73,7 @@ img {
   font-weight: normal;
   text-transform: none;
 }
-p {
+.text {
  font-size: 20px;
  font-family: 'Philosopher', serif;
  margin: 30px 0;
@@ -99,9 +103,11 @@ p {
 .main-content .page-title {
   text-align: center;
 }
-.menu-content p {
+.groove {
+  font-family: 'Philosopher', serif;
   font-size: 1.125rem;
   margin: 10px 0 0;
+  border-style: outset;
 }
 
 .grid {
