@@ -24,6 +24,9 @@
   margin: 0 100px;
   display: block;
 }
+.input-default {
+  font-size: 15px;
+}
 input[type="text"],
 input[type="email"],
 input[type="password"],
