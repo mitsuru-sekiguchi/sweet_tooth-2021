@@ -1,0 +1,67 @@
+.contents2 {
+   background: url('chococake.jpg') center top no-repeat;
+   background-size: cover;
+   height: 100vh;
+   font-family: 'Philosopher', serif;
+ }
+ .contents {
+  background: url('ice.jpg') center top no-repeat;
+  background-size: cover;
+  height: 100vh;
+  font-family: 'Philosopher', serif;
+}
+ .signup-title {
+   font-size: 50px;
+   margin-left: 100px;
+ }
+ .login-title {
+   font-size: 50px;
+   padding: 50px;
+   margin-left: 100px;
+ }
+.container {
+  font-size:  30px;
+  margin: 0 100px;
+  display: block;
+}
+.input-default {
+  font-size: 15px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  background: rgba(255,255,255, .5);
+  border-style: outset;
+  border-radius: 5px;
+  padding: 10px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  max-width: 480px;
+  height: 4rem;
+}
+input[type="submit"] {
+  background-color: chocolate;
+  color: whitesmoke;
+  border-radius: 5px;
+  padding: 18px 50px;
+  margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+  .signup-title {
+    margin-top: 40px;
+  }
+  .login-title {
+    margin-top: 40px;
+  }
+input[type="text"],
+input[type="email"],
+input[type="password"]
+  textarea {
+    max-width: 100%;
+  }
+}

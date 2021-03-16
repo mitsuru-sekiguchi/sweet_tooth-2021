@@ -5,10 +5,13 @@ html {
   font-size: 100%;
 }
 body{
+  background: url('syukuhuku.jpg') center top no-repeat;
+  background-size: cover;
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
   line-height: 1.7;
   color: #432;
 }
+
 a {
   text-decoration: none;
 }
@@ -30,6 +33,7 @@ img {
 }
 .logo {
   width: 300px;
+
 }
 .main-nav {
   display: flex;
@@ -39,18 +43,43 @@ img {
   list-style: none;
 }
 .main-nav li {
+  font-family: 'Philosopher', serif;
   margin-left: 30px;
   margin-top: 30px;
 }
-.main-nav a {
-  font-family: 'Philosopher', serif;
+.login {
   background-color: chocolate;
   color: whitesmoke;
   border-radius: 5px;
   padding: 18px 32px;
 }
-.main-nav a:hover {
+.logoin:hover {
   background-color: brown;
+}
+.logout {
+  background-color: chocolate;
+  color: whitesmoke;
+  border-radius: 5px;
+  padding: 18px 32px;
+}
+.logout:hover {
+  background-color: brown;
+}
+
+.sign-up {
+  background-color: chocolate;
+  color: whitesmoke;
+  border-radius: 5px;
+  padding: 18px 32px;
+}
+.sign-up:hover {
+  background-color: brown;
+}
+.user-nickname {
+  color: chocolate;
+  border-radius: 5px;
+  padding: 18px 20px;
+  text-transform: none;
 }
 /* 大きな背景画像 */
 .big-bg {
@@ -69,7 +98,7 @@ img {
   font-weight: normal;
   text-transform: none;
 }
-p {
+.text {
  font-size: 20px;
  font-family: 'Philosopher', serif;
  margin: 30px 0;
@@ -99,9 +128,11 @@ p {
 .main-content .page-title {
   text-align: center;
 }
-.menu-content p {
+.groove {
+  font-family: 'Philosopher', serif;
   font-size: 1.125rem;
   margin: 10px 0 0;
+  border-style: outset;
 }
 
 .grid {
