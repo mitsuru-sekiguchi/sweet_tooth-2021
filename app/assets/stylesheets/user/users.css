@@ -1,15 +1,3 @@
-.contents2 {
-   background: url('chococake.jpg') center top no-repeat;
-   background-size: cover;
-   height: 100vh;
-   font-family: 'Philosopher', serif;
- }
- .contents {
-  background: url('ice.jpg') center top no-repeat;
-  background-size: cover;
-  height: 100vh;
-  font-family: 'Philosopher', serif;
-}
  .signup-title {
    font-size: 50px;
    margin-left: 100px;

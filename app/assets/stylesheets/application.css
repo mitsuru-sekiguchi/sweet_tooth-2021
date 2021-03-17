@@ -16,3 +16,43 @@
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: 100%;
+}
+body{
+  background: url('syukuhuku.jpg') center top no-repeat;
+  background-size: cover;
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+  line-height: 1.7;
+  color: #432;
+}
+
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+.wrapper {
+  /* max-width: 1100px; */
+  margin-left:30px;
+  /* padding: 0 10px; */
+}
+.contents2 {
+  background: url('chococake.jpg') center top no-repeat;
+  background-size: cover;
+  height: 100vh;
+  font-family: 'Philosopher', serif;
+}
+.contents {
+ background: url('ice.jpg') center top no-repeat;
+ background-size: cover;
+ height: 100vh;
+ font-family: 'Philosopher', serif;
+}
+.contents3{
+  background: url('sweets.photo.jpg') center top no-repeat;
+  background-size: cover;
+  height: 100vh;
+  font-family: 'Philosopher', serif;
+}

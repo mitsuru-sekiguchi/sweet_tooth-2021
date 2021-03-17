@@ -19,47 +19,25 @@
        <h2 class="page-title">Is there a good way to satisfy the desire to eat sweets without feeling guilty?</h2>
        <p class="text">
            あなたのオススメのデザートを紹介してくれませんか？
-       </p><br>
-       <% if user_signed_in?%>
-        <a class="button" href="#">投稿する</a>
-       <% end %>
+       </p>
      </div>
    </div>
+    <div class="post-btn">
+       <% if user_signed_in?%>
+          <%= link_to "投稿する", new_sweet_path,  class:"top-post-button" %>
+       <% end %>
+    </div>
 
-<div class="wrapper grid">
- <div class="item">
-     <%= image_tag('cookie.jpg', class:"grid-image") %>
-     <p class="groove">商品名1</p>
- </div>
- <div class="item">
-     <%= image_tag('capcake.jpg', class:"grid-image") %>
-     <p class="groove">商品名2</p>
- </div>
- <div class="item">
-     <%= image_tag('capcake1.jpg', class:"grid-image") %>
-     <p class="groove">商品名3</p>
- </div>
- <div class="item">
-     <%= image_tag('pancake.jpg', class:"grid-image") %>
-     <p class="groove">商品名4</p>
- </div>
- <div class="item">
-     <%= image_tag('pudding.jpg', class:"grid-image") %>
-     <p class="groove">商品名5</p>
- </div>
- <div class="item">
-     <%= image_tag('pancake.jpg', class:"grid-image") %>
-     <p class="groove">商品名6</p>
- </div>
- <div class="item">
-     <%= image_tag('cake3.jpg', class:"grid-image") %>
-     <p class="groove">商品名7</p>
- </div>
- <div class="item">
-     <%= image_tag('macaroons.jpg', class:"grid-image") %>
-     <p class="groove">商品名8</p>
- </div>
-</div><!-- /.grid -->
+   <div class="wrapper grid">
+      <% @sweet.each do |sweet| %>
+         <div class="item">
+            <%= image_tag sweet.image.variant(resize: '300x300'), class:"image-grid" %>
+          <div class="item-name">
+            <%= sweet.name %>
+          </div>
+         </div>
+      <% end %>
+   </div><!-- /.grid -->
 
 <footer>
    <div class="wrapper">
