@@ -1,0 +1,23 @@
+<div class="contents3">
+  <h3 class="sweets-title">Post</h3><p class="sub-title">〜投稿する〜</p><br/>
+    <%= form_with(model: @sweet, local: true) do |form| %>
+      <div class="img-upload">
+        <%= form.file_field :image %>
+      </div><br/>
+      <div class="name-content">
+        <%= form.text_field :name, placeholder: "商品名" %>
+      </div><br/>
+      <div class="price-content">
+        <%= form.text_field :price, class:"price-input", placeholder: "価格※大体でもOK" %>
+      </div><br/>
+      <div class="shop-content">
+        <%= form.text_field :shop_info, placeholder: "購入店舗または利用店舗" %>
+      </div><br/>
+      <div class="text-content">
+        <%= form.text_area :text, placeholder: "text", placeholder: "商品説明※記入なしでもOK" %>
+      </div>
+      <%= form.submit " 投稿する", class:"post-btn"%>
+    <% end %>
+</div>
+
+

@@ -1,0 +1,147 @@
+// Place all the styles related to the sweets controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+/* HEADER
+------------------------------- */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+.logo {
+  width: 300px;
+
+}
+.main-nav {
+  display: flex;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin-top: 34px;
+  list-style: none;
+}
+.main-nav li {
+  font-family: 'Philosopher', serif;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.login {
+  background-color: chocolate;
+  color: whitesmoke;
+  border-radius: 5px;
+  padding: 18px 32px;
+}
+.logoin:hover {
+  background-color: brown;
+}
+.logout {
+  background-color: chocolate;
+  color: whitesmoke;
+  border-radius: 5px;
+  padding: 18px 32px;
+}
+.logout:hover {
+  background-color: brown;
+}
+
+.sign-up {
+  background-color: chocolate;
+  color: whitesmoke;
+  border-radius: 5px;
+  padding: 18px 32px;
+}
+.sign-up:hover {
+  background-color: brown;
+}
+.user-nickname {
+  color: chocolate;
+  border-radius: 5px;
+  padding: 18px 20px;
+  text-transform: none;
+}
+/* 大きな背景画像 */
+// .big-bg {
+//   background-size: cover;
+//   background-position: center top;
+//   background-repeat: no-repeat;
+//   max-width: 100%;
+//   object-fit: cover;
+// }
+
+/* 見出し */
+.page-title {
+  font-size: 3rem;
+  font-family: 'Philosopher', serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  text-transform: none;
+  margin: 0 80px;
+}
+.text {
+ font-size: 20px;
+ font-family: 'Philosopher', serif;
+ margin: 30px 0;
+}
+
+/* ボタン */
+.post-btn{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.top-post-button {
+  font-size: 1.25rem;
+  font-family: 'Philosopher', serif;
+  background-color: chocolate;
+  color: whitesmoke;
+  border-radius: 5px;
+  padding: 18px 40px;
+  margin: 0 auto;
+}
+.top-post-button:hover {
+  background: brown;
+}
+
+/* MAIN
+------------------------------- */
+.main-content {
+  max-width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+.main-content .page-title {
+  text-align: center;
+}
+.grid {
+  display: grid;
+  gap: 26px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.image-grid {
+  border-style: ridge;
+  height: 300px;
+  width: 300px;
+}
+.item-name{
+  width: 300px;
+  padding-left: 10px;
+  border-style: outset;
+  font-family: 'Philosopher', serif;
+  text-transform: none;
+}
+/* フッター */
+footer {
+  background-color: chocolate;
+  text-align: center;
+  padding: 25px 0;
+  margin-top: 50px;
+
+}
+
+footer p {
+  color: aliceblue;
+  font-size: 0.875rem;
+}
+
