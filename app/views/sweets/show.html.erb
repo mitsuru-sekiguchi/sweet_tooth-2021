@@ -7,6 +7,17 @@
     <div class="sweet-img-content">
         <%= image_tag @sweet.image, class:"sweet-box-img" %>
     </div><br/>
+
+    <% if user_signed_in?  %>
+
+      <% if current_user.id == @sweet.user_id %>
+        <div class="more-list">
+          <%= link_to "編集", edit_sweet_path(@sweet.id), method: :get, class:"edit-btn" %>
+          <%= link_to "削除",root_path, class:"destroy-btn" %>
+        </div>
+      <% end %>
+    <% end %>
+
     <table class="detail-table">
      <tbody>
       <tr>
