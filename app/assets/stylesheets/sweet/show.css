@@ -1,0 +1,77 @@
+.show-contents {
+  color: chocolate;
+  font-family: 'Philosopher', serif;
+  text-transform: none;
+  margin: 0 50px;
+}
+.show-name {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+}
+.sweet-img-content {
+  margin:10px 80px;
+}
+.sweet-box-img {
+  width: 100%;
+  height: 100%;
+  border-style: ridge;
+}
+.nickname-title {
+  font-size: 1rem;
+  margin: 35px 0 0 10px;
+}
+.show-container {
+  display: flex;
+  justify-content: space-around;
+}
+.detail-table {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.detail-sweet {
+  width: 20%;
+  background-color:chocolate;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+}
+
+.detail-value {
+  width: 80%;
+  padding: 20px;
+  border-style: outset;
+  border-radius: 5px;
+  color: #535d58;
+  font-size: 20px;
+}
+.detail-sweet-text {
+  width: 20%;
+  height: 150px;
+  background-color:chocolate;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+}
+
+.detail-value-text {
+  width: 80%;
+  padding-left: 20px;
+  border-style: outset;
+  border-radius: 5px;
+  color: #535d58;
+  font-size: 20px;
+}
+.another-sweet-content {
+  display: flex;
+}
+.another-sweet {
+  color: chocolate;
+  font-size: 25px;
+  border-bottom: 2px solid chocolate;
+  margin: 0 auto;
+}
