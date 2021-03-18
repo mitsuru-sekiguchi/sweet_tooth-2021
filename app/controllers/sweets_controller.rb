@@ -33,9 +33,14 @@ class SweetsController < ApplicationController
     end
   end
 
+  def destroy
+    sweet = Sweet.find(params[:id])
+    if sweet.destroy
+      redirect_to root_path
+    end
+  end
 
 private
-
   def sweet_params
     params.require(:sweet).permit(:name, :price, :shop_info, :text, :image).merge(user_id: current_user.id)
   end
