@@ -20,6 +20,15 @@ class SweetsController < ApplicationController
     @sweet = Sweet.find(params[:id])
   end
 
+  def edit
+    @sweet = Sweet.find(params[:id])
+  end
+
+  def update
+    sweet = Sweet.find(params[:id])
+    sweet.update(sweet_params)
+  end
+
 
 private
 
