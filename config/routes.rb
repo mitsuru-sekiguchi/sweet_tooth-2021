@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   get 'sweets/index'
   root to: "sweets#index"
 
-  resources :sweets, only: [:index, :new, :create]
+  resources :sweets, only: [:index, :new, :create, :show]
 end

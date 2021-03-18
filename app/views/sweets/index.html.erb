@@ -1,17 +1,4 @@
-<header class="page-header">
-    <h1><%= link_to image_tag("logo.png", class:"logo", alt:"Sweet Tooth ホーム"), "/" %></h1>
-     <nav>
-        <ul class="main-nav">
-         <% if user_signed_in? %>
-            <li><%= link_to current_user.nickname,  "#", class: "user-nickname" %></li>
-            <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
-         <% else%>
-            <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
-            <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
-         <% end %>
-        </ul>
-     </nav>
-</header>
+<%= render "shared/header" %>
 
    <div class="main">
      <%= image_tag('main-bg.jpg', class:"big-bg") %>
@@ -31,7 +18,7 @@
    <div class="wrapper grid">
       <% @sweet.each do |sweet| %>
          <div class="item">
-            <%= image_tag sweet.image.variant(resize: '300x300'), class:"image-grid" %>
+            <%= link_to image_tag(sweet.image,class:"image-grid"), sweet_path(sweet.id) %>
           <div class="item-name">
             <%= sweet.name %>
           </div>
@@ -39,8 +26,4 @@
       <% end %>
    </div><!-- /.grid -->
 
-<footer>
-   <div class="wrapper">
-       <p><small>&copy; 2021 Sweet Tooth</small></p>
-   </div>
-</footer>
+<%= render "shared/footer" %>

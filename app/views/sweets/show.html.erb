@@ -1,0 +1,35 @@
+<%= render "shared/header" %>
+
+  <div class="show-contents">
+    <div class="show-name">
+      <%= @sweet.name %>
+    </div>
+    <div class="sweet-img-content">
+        <%= image_tag @sweet.image, class:"sweet-box-img" %>
+    </div><br/>
+    <table class="detail-table">
+     <tbody>
+      <tr>
+        <th class="detail-sweet">投稿者</th>
+        <td class="detail-value"><%= @sweet.user.nickname%></td>
+      </tr>
+      <tr>
+        <th class="detail-sweet">価格</th>
+        <td class="detail-value">¥<%= @sweet.price %></td>
+      </tr>
+      <tr>
+        <th class="detail-sweet">購入/利用店舗</th>
+        <td class="detail-value"><%= @sweet.shop_info %></td>
+      </tr>
+      <tr>
+        <th class="detail-sweet-text">商品紹介</th>
+        <td class="detail-value-text"><%= @sweet.text %></td>
+      </tr>
+     </tbody>
+    </table>
+    <div class="another-sweet-content">
+      <a href="#" class="another-sweet"><%= @sweet.user.nickname%>さんの投稿一覧をみる</a>
+    </div>
+  </div>
+
+<%= render "shared/footer" %>

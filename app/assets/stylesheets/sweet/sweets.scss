@@ -32,7 +32,7 @@
   border-radius: 5px;
   padding: 18px 32px;
 }
-.logoin:hover {
+.login:hover {
   background-color: brown;
 }
 .logout {
@@ -71,6 +71,7 @@
 
 /* 見出し */
 .page-title {
+  color: #535d58;
   font-size: 3rem;
   font-family: 'Philosopher', serif;
   text-transform: uppercase;
@@ -79,6 +80,7 @@
   margin: 0 80px;
 }
 .text {
+ color: #535d58;
  font-size: 20px;
  font-family: 'Philosopher', serif;
  margin: 30px 0;
@@ -120,11 +122,12 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .image-grid {
-  border-style: ridge;
+  border-style: none;
   height: 300px;
   width: 300px;
 }
 .item-name{
+  color: #535d58;
   width: 300px;
   padding-left: 10px;
   border-style: outset;
