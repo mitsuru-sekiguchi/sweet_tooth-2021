@@ -1,4 +1,7 @@
 class SweetsController < ApplicationController
+  before_action :set_sweet, only: [:show, :edit]
+  before_action :move_to_index, except: [:index, :show]
+
   def index
     @sweet = Sweet.includes(:user)
   end
@@ -17,11 +20,9 @@ class SweetsController < ApplicationController
   end
 
   def show
-    @sweet = Sweet.find(params[:id])
   end
 
   def edit
-    @sweet = Sweet.find(params[:id])
   end
 
   def update
@@ -43,5 +44,15 @@ class SweetsController < ApplicationController
 private
   def sweet_params
     params.require(:sweet).permit(:name, :price, :shop_info, :text, :image).merge(user_id: current_user.id)
+  end
+
+  def set_sweet
+    @sweet = Sweet.find(params[:id])
+  end
+
+  def move_to_index
+    unless user_signed_in?
+      redirect_to action: :index
+    end
   end
 end
