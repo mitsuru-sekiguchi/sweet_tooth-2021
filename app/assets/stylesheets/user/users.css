@@ -34,9 +34,9 @@ input[type="password"] {
 input[type="submit"] {
   background-color: chocolate;
   color: whitesmoke;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   border-radius: 5px;
-  padding: 18px 50px;
+  padding: 18px 36px;
   margin-top: 30px;
 }
 input[type="submit"]:hover {
