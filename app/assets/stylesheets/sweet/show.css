@@ -74,6 +74,10 @@
   margin-bottom: 30px;
 
 }
+.another-sweet:hover {
+  color: brown;
+
+}
 .more-list {
   display: flex;
   justify-content: center;

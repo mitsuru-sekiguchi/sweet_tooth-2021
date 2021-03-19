@@ -36,12 +36,11 @@ class SweetsController < ApplicationController
 
   def destroy
     sweet = Sweet.find(params[:id])
-    if sweet.destroy
-      redirect_to root_path
-    end
+    redirect_to root_path if sweet.destroy
   end
 
-private
+  private
+
   def sweet_params
     params.require(:sweet).permit(:name, :price, :shop_info, :text, :image).merge(user_id: current_user.id)
   end
@@ -51,8 +50,6 @@ private
   end
 
   def move_to_index
-    unless user_signed_in?
-      redirect_to action: :index
-    end
+    redirect_to action: :index unless user_signed_in?
   end
 end
