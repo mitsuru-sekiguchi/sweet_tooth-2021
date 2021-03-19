@@ -34,22 +34,24 @@ input[type="password"] {
 input[type="submit"] {
   background-color: chocolate;
   color: whitesmoke;
+  font-size: 1.25rem;
   border-radius: 5px;
-  padding: 18px 50px;
+  padding: 18px 36px;
   margin-top: 30px;
 }
+input[type="submit"]:hover {
+  background-color: brown;
+}
 
-@media (max-width: 600px) {
-  .signup-title {
-    margin-top: 40px;
-  }
-  .login-title {
-    margin-top: 40px;
-  }
-input[type="text"],
-input[type="email"],
-input[type="password"]
-  textarea {
-    max-width: 100%;
-  }
+/* showページ
+-------------------------------*/
+.show-content {
+  color: chocolate;
+  font-size: 2rem;
+  font-family: 'Philosopher', serif;
+  border-top: 2px chocolate solid;
+  border-bottom: 2px chocolate solid;
+  text-transform: none;
+  text-align: center;
+  padding: 30px 0;
 }

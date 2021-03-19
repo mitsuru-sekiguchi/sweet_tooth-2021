@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   root to: "sweets#index"
 
   resources :sweets
+  resources :users, only: :show
 end

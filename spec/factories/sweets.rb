@@ -1,9 +1,9 @@
 FactoryBot.define do
   factory :sweet do
     association :user
-    name       {'pancake'}
+    name       { 'pancake' }
     price      { 300 }
-    shop_info  { 'pancakeshop'}
+    shop_info  { 'pancakeshop' }
     text       { 'nice!' }
 
     after(:build) do |sweet|

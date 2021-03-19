@@ -60,13 +60,12 @@
   padding: 18px 20px;
   text-transform: none;
 }
-/* 大きな背景画像 */
-// .big-bg {
-//   background-size: cover;
-//   background-position: center top;
-//   background-repeat: no-repeat;
-//   max-width: 100%;
-//   object-fit: cover;
+
+// .main {
+//   min-height: 100vh;
+//   position: relative;
+//   padding-bottom: 120px;
+//   box-sizing: border-box;
 // }
 
 /* 見出し */
@@ -90,7 +89,6 @@
 .post-btn{
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
 }
 .top-post-button {
   font-size: 1.25rem;
@@ -107,6 +105,10 @@
 
 /* MAIN
 ------------------------------- */
+.big-bg {
+  width: 100%;
+  max-height: 800px;
+}
 .main-content {
   max-width: 100%;
   text-align: center;
@@ -118,28 +120,34 @@
 }
 .grid {
   display: grid;
-  gap: 26px;
+  gap: 15px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-.image-grid {
-  border-style: none;
-  height: 300px;
-  width: 300px;
+  margin: 30px 30px;
 }
 .item-name{
   color: #535d58;
-  width: 300px;
+  width: 320px;
   padding-left: 10px;
   border-style: outset;
   font-family: 'Philosopher', serif;
   text-transform: none;
 }
-/* フッター */
+.item-created_at {
+  text-align: end;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+/* フッター
+------------------------------ */
 footer {
+  width: 100%;
   background-color: chocolate;
   text-align: center;
   padding: 25px 0;
-  margin-top: 50px;
+
+  position: absolute;
+  bottom:0;
 
 }
 
