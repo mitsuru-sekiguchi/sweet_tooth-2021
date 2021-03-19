@@ -1,20 +1,16 @@
+/* 投稿詳細ページ */
 .show-contents {
   color: chocolate;
   font-family: 'Philosopher', serif;
   text-transform: none;
-  margin: 0 50px;
-}
-.show-name {
-  display: flex;
-  justify-content: center;
-  font-size: 3rem;
+  margin: 0 100px;
 }
 .sweet-img-content {
   margin:10px 80px;
+  display: flex;
+  justify-content: center;
 }
 .sweet-box-img {
-  width: 100%;
-  height: 100%;
   border-style: ridge;
 }
 .nickname-title {
@@ -68,13 +64,15 @@
   font-size: 20px;
 }
 .another-sweet-content {
-  display: flex;
+  text-align: center;
+  font-size: 25px;
+  margin: 0 auto;
+
 }
 .another-sweet {
   color: chocolate;
-  font-size: 25px;
-  border-bottom: 2px solid chocolate;
-  margin: 0 auto;
+  margin-bottom: 30px;
+
 }
 .more-list {
   display: flex;
@@ -90,6 +88,9 @@
   border-radius: 5px;
   padding: 18px 50px;
 }
+.edit-btn:hover {
+  background-color: brown;
+}
 .destroy-btn {
   color: chocolate;
   background-color: chocolate;
@@ -97,4 +98,7 @@
   border-radius: 5px;
   padding: 18px 50px;
   margin-bottom: 100px;
+}
+.destroy-btn:hover {
+  background-color: brown;
 }

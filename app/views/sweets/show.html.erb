@@ -1,11 +1,8 @@
 <%= render "shared/header" %>
 
   <div class="show-contents">
-    <div class="show-name">
-      <%= @sweet.name %>
-    </div>
     <div class="sweet-img-content">
-        <%= image_tag @sweet.image, class:"sweet-box-img" %>
+        <%= image_tag @sweet.image.variant(combine_options:{gravity: :center, resize:"600x600^",crop:"600x600+0+0"}).processed, class:"sweet-box-img" %>
     </div><br/>
 
     <% if user_signed_in?  %>
@@ -25,6 +22,10 @@
         <td class="detail-value"><%= @sweet.user.nickname%></td>
       </tr>
       <tr>
+        <th class="detail-sweet">商品名</th>
+        <td class="detail-value"><%= @sweet.name%></td>
+      </tr>
+      <tr>
         <th class="detail-sweet">価格</th>
         <td class="detail-value">¥<%= @sweet.price %></td>
       </tr>
@@ -39,7 +40,11 @@
      </tbody>
     </table>
     <div class="another-sweet-content">
-      <a href="users/#{current_user.id}", class="another-sweet"><%= @sweet.user.nickname%>さんの投稿一覧をみる</a>
+      <%= link_to user_path(current_user.id) do %>
+      <div class="another-sweet">
+      <%= @sweet.user.nickname %>さんの投稿一覧をみる
+      </div>
+      <% end %>
     </div>
   </div>
 
