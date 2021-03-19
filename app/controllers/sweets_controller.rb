@@ -1,6 +1,6 @@
 class SweetsController < ApplicationController
   def index
-    @sweet = Sweet.all
+    @sweet = Sweet.includes(:user)
   end
 
   def new

@@ -40,7 +40,7 @@
      </tbody>
     </table>
     <div class="another-sweet-content">
-      <%= link_to user_path(current_user.id) do %>
+      <%= link_to user_path(@sweet.user.id) do %>
       <div class="another-sweet">
       <%= @sweet.user.nickname %>さんの投稿一覧をみる
       </div>
