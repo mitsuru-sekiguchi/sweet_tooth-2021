@@ -3,7 +3,7 @@
   color: chocolate;
   font-family: 'Philosopher', serif;
   text-transform: none;
-  margin: 0 100px;
+  margin: 50px 100px;
 }
 .sweet-img-content {
   margin:10px 80px;
@@ -123,17 +123,18 @@
   color: chocolate;
   font-size: 20px;
 }
-.edit-btn {
+.show-sweet-edit-btn {
   color: chocolate;
-  margin: 0 100px 100px 0;
+  margin: 0 150px 100px 0;
   background-color: chocolate;
   color: whitesmoke;
   border-radius: 5px;
   padding: 18px 60px;
 }
-.edit-btn:hover {
+.show-sweet-edit-btn:hover {
   background-color: brown;
 }
+
 .destroy-btn {
   color: chocolate;
   background-color: chocolate;

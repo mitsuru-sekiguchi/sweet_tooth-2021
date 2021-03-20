@@ -61,13 +61,6 @@
   text-transform: none;
 }
 
-// .main {
-//   min-height: 100vh;
-//   position: relative;
-//   padding-bottom: 120px;
-//   box-sizing: border-box;
-// }
-
 /* 見出し */
 .page-title {
   color: #535d58;
@@ -86,9 +79,13 @@
 }
 
 /* ボタン */
-.post-btn{
+.post-btn-content{
   display: flex;
   justify-content: center;
+  color: whitesmoke;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 18px 40px;
 }
 .top-post-button {
   font-size: 1.25rem;
@@ -136,23 +133,5 @@
   text-align: end;
   padding-right: 10px;
   padding-top: 10px;
-}
-
-/* フッター
------------------------------- */
-footer {
-  width: 100%;
-  background-color: chocolate;
-  text-align: center;
-  padding: 25px 0;
-
-  position: absolute;
-  bottom:0;
-
-}
-
-footer p {
-  color: aliceblue;
-  font-size: 0.875rem;
 }
 
