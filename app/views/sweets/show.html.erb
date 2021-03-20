@@ -30,7 +30,7 @@
         <td class="detail-value">¥<%= @sweet.price %></td>
       </tr>
       <tr>
-        <th class="detail-sweet">購入/利用店舗</th>
+        <th class="detail-sweet">購入/<br/>利用店舗</th>
         <td class="detail-value"><%= @sweet.shop_info %></td>
       </tr>
       <tr>
@@ -39,13 +39,39 @@
       </tr>
      </tbody>
     </table>
+
+    <table class="detail-comment-table">
+     <tbody>
+      <tr>
+       <th class="detail-sweet-comment" >コメント一覧</th>
+       <tr>
+       <td class="detail-value-comment">
+          <% @comments.each do |comment| %>
+          <%= comment.user.nickname %>さん:
+          <%= comment.text %><br/>
+        <% end %>
+       </td>
+       </tr>
+      </tr>
+     </tbody>
+    </table>
+
+    <div class="comment-container">
+      <% if user_signed_in? %>
+       <%= form_with(model: [@sweet, @comment], local: true) do |form| %>
+          <%= form.text_area :text, placeholder: "コメントを入力", rows: "2", class:"text_area" %>
+          <%= form.submit "コメントする", class:"comment-btn" %>
+       <% end %>
+      <% end %>
+
     <div class="another-sweet-content">
       <%= link_to user_path(@sweet.user.id) do %>
-      <div class="another-sweet">
-      <%= @sweet.user.nickname %>さんの投稿一覧をみる
-      </div>
+        <div class="another-sweet">
+          <%= @sweet.user.nickname %>さんの投稿一覧をみる
+        </div>
       <% end %>
     </div>
   </div>
+ </div>
 
 <%= render "shared/footer" %>

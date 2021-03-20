@@ -31,13 +31,21 @@ input[type="password"] {
   max-width: 480px;
   height: 4rem;
 }
-input[type="submit"] {
+.login-btn {
   background-color: chocolate;
   color: whitesmoke;
-  font-size: 1.25rem;
+  font-size: 30px;
   border-radius: 5px;
-  padding: 18px 36px;
-  margin-top: 30px;
+  padding: 10px 40px;
+  margin-top: 50px;
+}
+.signup-btn {
+  background-color: chocolate;
+  color: whitesmoke;
+  font-size: 30px;
+  border-radius: 5px;
+  padding: 10px 40px;
+  margin-top: 50px;
 }
 input[type="submit"]:hover {
   background-color: brown;

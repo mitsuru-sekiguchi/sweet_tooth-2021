@@ -1,7 +1,7 @@
 class CommentsController < ApplicationController
   def create
-    Comment.create(comment_params)
-    redirect_to sweet_comments_path(comment.sweet.id)
+    comment = Comment.create(comment_params)
+    redirect_to sweet_path(comment.sweet.id)
   end
 
   private
