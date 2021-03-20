@@ -9,4 +9,12 @@ class Sweet < ApplicationRecord
     validates :shop_info
     validates :image
   end
-end
+
+  def self.search(search)
+    if search != ""
+      Sweet.where('name LIKE(?)', "%#{search}%")
+    else
+      Sweet.all
+    end
+  end
+ end

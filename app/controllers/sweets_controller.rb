@@ -1,6 +1,6 @@
 class SweetsController < ApplicationController
   before_action :set_sweet, only: [:show, :edit]
-  before_action :move_to_index, except: [:index, :show]
+  before_action :move_to_index, except: [:index, :show, :search]
 
   def index
     @sweet = Sweet.includes(:user).order("created_at DESC")
@@ -22,6 +22,10 @@ class SweetsController < ApplicationController
   def show
     @comment = Comment.new
     @comments = @sweet.comments.includes(:user)
+  end
+
+  def search
+    @sweet = Sweet.search(params[:keyword])
   end
 
   def edit

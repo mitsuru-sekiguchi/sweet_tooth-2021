@@ -99,6 +99,23 @@
 .top-post-button:hover {
   background: brown;
 }
+.search-form {
+  font-family: 'Philosopher', serif;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.search-input {
+  border-style: ridge;
+}
+.search-btn {
+  background-color: chocolate;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  margin-left: 30px;
+  padding: 10px 30px;
+}
 
 /* MAIN
 ------------------------------- */
