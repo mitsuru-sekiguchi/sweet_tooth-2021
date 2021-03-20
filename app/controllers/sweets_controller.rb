@@ -3,7 +3,7 @@ class SweetsController < ApplicationController
   before_action :move_to_index, except: [:index, :show]
 
   def index
-    @sweet = Sweet.includes(:user)
+    @sweet = Sweet.includes(:user).order("created_at DESC")
   end
 
   def new
@@ -20,6 +20,8 @@ class SweetsController < ApplicationController
   end
 
   def show
+    @comment = Comment.new
+    @comments = @sweet.comments.includes(:user)
   end
 
   def edit

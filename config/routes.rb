@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   get 'sweets/index'
   root to: "sweets#index"
 
-  resources :sweets
+  resources :sweets do
+    resources :comments, only: :create
+  end
   resources :users, only: :show
 end

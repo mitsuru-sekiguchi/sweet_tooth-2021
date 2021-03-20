@@ -1,10 +1,3 @@
-.contents3 {
-  font-size: 1rem;
-  font-family: 'Philosopher', serif;
-  text-transform: uppercase;
-  font-weight: normal;
-  text-transform: none;
-}
 .sweets-title {
   font-size: 3rem;
   color: aliceblue;
@@ -13,24 +6,6 @@
 .sub-title {
   color: aliceblue;
   margin-left: 100px;
-}
-input#image.image-field{
-  margin-left: 50px;
-}
-
-input#name{
-  margin-left: 50px;
-}
-input#price.price-input{
-  margin-left: 50px;
-}
-textarea#sweet_text{
-  margin-left: 50px;
-  height: 150px;
-  width: 500px;
-}
-
 input {
   margin-left: 50px;
 }
-
