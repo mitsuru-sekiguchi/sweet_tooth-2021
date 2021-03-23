@@ -1,7 +1,7 @@
 <body class="edit-body">
 
 <div class="edit-contents">
-  <h3 class="sweets-title">Edit</h3><p class="sub-title">〜編集〜</p><br/>
+  <h3 class="edit-title">Edit</h3><p class="edit-sub-title">〜編集〜</p><br/>
     <%= form_with(model: @sweet, local: true) do |form| %>
       <div class="img-upload">
         <%= form.file_field :image %>

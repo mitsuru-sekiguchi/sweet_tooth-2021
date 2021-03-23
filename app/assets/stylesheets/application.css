@@ -40,6 +40,9 @@ a {
 .container {
   font-size:  30px;
 }
+label {
+  color: #432;
+}
 /* ヘッダー
 ------------------------------- */
 .page-header {
@@ -108,6 +111,7 @@ a {
   padding-left: 100px;
 }
 .login-title {
+  color: #432;
   font-size: 50px;
   padding: 50px 0;
 }
@@ -139,6 +143,7 @@ a {
   margin: 50px 0;
 }
 .signup-title {
+  color: #432;
   font-size: 50px;
   padding: 50px 0;
 }
@@ -163,6 +168,14 @@ a {
 }
 /* 投稿編集画面
 ------------------------------- */
+.edit-title{
+  font-size: 50px;
+  color: #432;
+}
+.edit-sub-title {
+  color: #432;
+  margin-left: 10px;
+}
 .edit-body {
   background: url('cake4.jpg') center top no-repeat;
   background-size: cover;
