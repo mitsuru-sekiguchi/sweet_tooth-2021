@@ -9,9 +9,9 @@
           </div>
             <tr>
               <% if current_user.liked_by?(sweet.id) %>
-                <td><%= link_to 'いいねを外す', destroy_like_path(sweet), method: :DELETE %></td>
+                <td><%= link_to 'いいねを外す', destroy_like_path(sweet), method: :DELETE %><%= sweet.likes.count %></td>
               <% else %>
-                <td><%= link_to 'いいね！', create_like_path(sweet), method: :POST %></td>
+                <td><%= link_to 'いいね！', create_like_path(sweet), method: :POST %><%= sweet.likes.count %></td>
               <% end %>
                 <td><%= link_to 'Show', sweet %></td>
                 <td><%= link_to 'Edit', edit_sweet_path(sweet) %></td>
