@@ -10,4 +10,8 @@ class User < ApplicationRecord
 
   validates :nickname, presence: true
   validates :password, format: { with: /([0-9].*[a-zA-Z]|[a-zA-Z].*[0-9])/ }
+
+  def liked_by?(sweet_id)
+    likes.where(sweet_id: sweet_id).exists?
+  end
 end

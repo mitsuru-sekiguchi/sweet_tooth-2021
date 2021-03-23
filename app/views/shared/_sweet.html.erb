@@ -7,6 +7,16 @@
           <div class="item-created_at">
                投稿日：<%= sweet.created_at.strftime('%Y/%m/%d') %>
           </div>
+            <tr>
+              <% if current_user.liked_by?(sweet.id) %>
+                <td>いいねを外す</td>
+              <% else %>
+                <td>いいね！</td>
+              <% end %>
+                <td><%= link_to 'Show', sweet %></td>
+                <td><%= link_to 'Edit', edit_sweet_path(sweet) %></td>
+                <td><%= link_to 'Destroy', sweet, method: :delete, data: { confirm: 'Are you sure? '} %></td>
+            </tr>
         </div>
       </div>
     <% end %>
