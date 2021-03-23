@@ -11,7 +11,7 @@
               <% if current_user.liked_by?(sweet.id) %>
                 <td>いいねを外す</td>
               <% else %>
-                <td>いいね！</td>
+                <td><%= link_to 'いいね！', create_like_path(sweet), method: :POST %></td>
               <% end %>
                 <td><%= link_to 'Show', sweet %></td>
                 <td><%= link_to 'Edit', edit_sweet_path(sweet) %></td>
