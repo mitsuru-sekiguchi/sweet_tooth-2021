@@ -6,6 +6,7 @@ class User < ApplicationRecord
 
   has_many :sweets
   has_many :comments
+  has_many :likes
 
   validates :nickname, presence: true
   validates :password, format: { with: /([0-9].*[a-zA-Z]|[a-zA-Z].*[0-9])/ }
