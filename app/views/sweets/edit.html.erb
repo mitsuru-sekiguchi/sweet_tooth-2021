@@ -1,5 +1,7 @@
+<body class="edit-body">
+
 <div class="edit-contents">
-  <h3 class="sweets-title">Edit</h3><p class="sub-title">〜編集する〜</p><br/>
+  <h3 class="sweets-title">Edit</h3><p class="sub-title">〜編集〜</p><br/>
     <%= form_with(model: @sweet, local: true) do |form| %>
       <div class="img-upload">
         <%= form.file_field :image %>
@@ -8,7 +10,7 @@
         <%= form.text_field :name, placeholder: "商品名" %>
       </div><br/>
       <div class="price-content">
-        <%= form.text_field :price, class:"price-input", placeholder: "価格※大体でもOK" %>
+        <%= form.text_field :price, placeholder: "価格※大体でもOK" %>
       </div><br/>
       <div class="shop-content">
         <%= form.text_field :shop_info, placeholder: "購入店舗または利用店舗" %>
@@ -21,3 +23,5 @@
 </div>
 
 <%= render "shared/footer" %>
+
+</body>

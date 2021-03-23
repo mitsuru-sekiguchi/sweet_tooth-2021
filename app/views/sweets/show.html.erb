@@ -1,5 +1,8 @@
-<%= render "shared/header" %>
+<body class="index">
 
+<%= render "shared/header" %>
+  <div class="show-title"><%= @sweet.name %>
+  </div>
   <div class="show-contents">
     <div class="sweet-img-content">
         <%= image_tag @sweet.image.variant(combine_options:{gravity: :center, resize:"600x600^",crop:"600x600+0+0"}).processed, class:"sweet-box-img" %>
@@ -75,3 +78,5 @@
  </div>
 
 <%= render "shared/footer" %>
+
+</body>

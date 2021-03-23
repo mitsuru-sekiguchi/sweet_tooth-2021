@@ -1,5 +1,7 @@
+<body class="new-body">
+
 <div class="new-contents">
-  <h3 class="sweets-title">Post</h3><p class="sub-title">〜投稿する〜</p><br/>
+  <h3 class="sweets-title">Post</h3><p class="sub-title">〜投稿〜</p><br/>
     <%= form_with(model: @sweet, local: true) do |form| %>
       <div class="img-upload">
         <%= form.file_field :image %>
@@ -21,3 +23,5 @@
 </div>
 
 <%= render "shared/footer" %>
+
+</body>

@@ -3,65 +3,10 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-/* HEADER
+
+
+/* トップページ見出し
 ------------------------------- */
-.page-header {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 20px;
-}
-.logo {
-  width: 300px;
-
-}
-.main-nav {
-  display: flex;
-  font-size: 1.25rem;
-  text-transform: uppercase;
-  margin-top: 34px;
-  list-style: none;
-}
-.main-nav li {
-  font-family: 'Philosopher', serif;
-  margin-left: 30px;
-  margin-top: 30px;
-}
-.login {
-  background-color: chocolate;
-  color: whitesmoke;
-  border-radius: 5px;
-  padding: 18px 32px;
-}
-.login:hover {
-  background-color: brown;
-}
-.logout {
-  background-color: chocolate;
-  color: whitesmoke;
-  border-radius: 5px;
-  padding: 18px 32px;
-}
-.logout:hover {
-  background-color: brown;
-}
-
-.sign-up {
-  background-color: chocolate;
-  color: whitesmoke;
-  border-radius: 5px;
-  padding: 18px 32px;
-}
-.sign-up:hover {
-  background-color: brown;
-}
-.user-nickname {
-  color: chocolate;
-  border-radius: 5px;
-  padding: 18px 20px;
-  text-transform: none;
-}
-
-/* 見出し */
 .page-title {
   color: #535d58;
   font-size: 3rem;
@@ -77,8 +22,22 @@
  font-family: 'Philosopher', serif;
  margin: 30px 0;
 }
+.big-bg {
+  width: 100%;
+  max-height: 800px;
+}
+.main-content {
+  max-width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+.main-content .page-title {
+  text-align: center;
+}
 
-/* ボタン */
+/* ボタン
+------------------------------- */
 .post-btn-content{
   display: flex;
   justify-content: center;
@@ -99,10 +58,25 @@
 .top-post-button:hover {
   background: brown;
 }
+/* 検索フォーム
+------------------------------- */
+.search-title {
+  font-family: 'Philosopher', serif;
+  font-size: 2rem;
+  color: chocolate;
+  text-align: center;
+  border-top: 2px chocolate solid;
+  border-bottom: 2px chocolate solid;
+  text-transform: none;
+  text-align: center;
+  margin: 30px 0;
+  padding: 30px 0;
+}
 .search-form {
   font-family: 'Philosopher', serif;
   display: flex;
   justify-content: center;
+  margin-top: 5px;
   margin-bottom: 50px;
 }
 .search-input {
@@ -111,27 +85,18 @@
 .search-btn {
   background-color: chocolate;
   color: white;
+  height: 65px;
+  width: 160px;
   font-size: 20px;
   border-radius: 5px;
+  margin-top: 10px;
   margin-left: 30px;
   padding: 10px 30px;
 }
 
-/* MAIN
+/* 投稿画像一覧
 ------------------------------- */
-.big-bg {
-  width: 100%;
-  max-height: 800px;
-}
-.main-content {
-  max-width: 100%;
-  text-align: center;
-  margin: 0 auto;
-  padding-bottom: 30px;
-}
-.main-content .page-title {
-  text-align: center;
-}
+
 .grid {
   display: grid;
   gap: 15px;
@@ -146,9 +111,25 @@
   font-family: 'Philosopher', serif;
   text-transform: none;
 }
+.item-content {
+  margin: 0 auto;
+}
 .item-created_at {
   text-align: end;
   padding-right: 10px;
   padding-top: 10px;
 }
 
+
+/* 各ユーザー投稿一覧ページ
+------------------------------- */
+.show-content {
+  color: chocolate;
+  font-size: 2rem;
+  font-family: 'Philosopher', serif;
+  border-top: 2px chocolate solid;
+  border-bottom: 2px chocolate solid;
+  text-transform: none;
+  text-align: center;
+  padding: 30px 0;
+}
