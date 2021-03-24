@@ -1,5 +1,5 @@
 # SweetTooth
-# <img width="1426" alt="スクリーンショット 2021-03-24 16 44 45" src="https://user-images.githubusercontent.com/74820572/112273314-8fda7400-8cc0-11eb-907d-a4ce6cebe7c3.png">
+![demo](https://gyazo.com/7fca572e41852ed275d4a743134ced48/raw)
 ## 概要
 スイーツ専門の投稿サイト
 ## 機能
