@@ -5,9 +5,17 @@
 その他、投稿へのコメントやYummy!（いいね）で評価することが可能。
 
 ## 機能
-ユーザー管理機能/投稿機能/投稿編集機能/投稿削除機能/コメント機能/yummy！（いいね）機能
-### URL https://sweet-tooth-2021.herokuapp.com/
-### テスト用アカウント
+・ユーザー管理機能
+・投稿機能
+・投稿編集機能
+・投稿削除機能
+・コメント機能
+・yummy！（いいね）機能
+
+## URL https://sweet-tooth-2021.herokuapp.com/
+
+
+## テスト用アカウント
 Basic認証
 ID：sweettooth
 Pass:20210310
@@ -19,6 +27,7 @@ Pass:test123
 テストユーザー2
 email:aaaa@co.jp
 Pass:aaa123
+
 
 
 
