@@ -1,4 +1,5 @@
 # SweetTooth
+![](https://gyazo.com/7fca572e41852ed275d4a743134ced48/raw)
 ## 概要
 スイーツ専門の投稿サイト
 ## 機能
