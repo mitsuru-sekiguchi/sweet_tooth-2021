@@ -16,18 +16,24 @@
 
 
 ## テスト用アカウント
-Basic認証
-ID：sweettooth
-Pass:20210310
+#### Basic認証
+#### ID：sweettooth
+#### Pass:20210310
 
-テストユーザー1
-email:test@test.co.jp
-Pass:test123
+#### テストユーザー1
+#### email:test@test.co.jp
+#### Pass:test123
 
-テストユーザー2
-email:aaaa@co.jp
-Pass:aaa123
+#### テストユーザー2
+#### email:aaaa@co.jp
+#### Pass:aaa123
 
+## 目指した課題解決
+#### ・スイーツに特化したSNSが欲しい
+#### ・画像はあるが再度、購入・利用したいと思った時に商品名、金額、店舗名など情報が思い出せない
+#### ・最新スイーツの情報収集や投稿で気になったスイーツがある店舗名、その金額が知りたい
+
+## 要件定義
 
 
 
