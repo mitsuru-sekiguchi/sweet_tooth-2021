@@ -7,6 +7,13 @@
           <div class="item-created_at">
                投稿日：<%= sweet.created_at.strftime('%Y/%m/%d') %>
           </div>
+            <tr>
+              <% if current_user.liked_by?(sweet.id) %>
+                <td><%= link_to 'yummy!', destroy_like_path(sweet), method: :DELETE %><%= sweet.likes.count %></td>
+              <% else %>
+                <td><%= link_to 'yummy！', create_like_path(sweet), method: :POST %><%= sweet.likes.count %></td>
+              <% end %>
+            </tr>
         </div>
       </div>
     <% end %>
