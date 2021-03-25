@@ -1,41 +1,60 @@
 # SweetTooth
+![sweettooth top](https://user-images.githubusercontent.com/74820572/112306681-68e16980-8ce3-11eb-9594-48a4071a64f1.gif)
+![index](https://user-images.githubusercontent.com/74820572/112423163-79dabb00-8d75-11eb-8e52-0eec982e9467.gif)
+
+
+<br>
 
 ## 概要
 スイーツ専門の投稿サイトでユーザー登録をすることにより投稿が可能になる。
 その他、投稿へのコメントやYummy!（いいね）で評価することが可能。
 
-## 機能
-#### ・ユーザー管理機能
+<br>
+
+## 機能<br>
+
+#### ・ユーザー管理機能※deviseを使用
+<img width="" alt="signup" src="https://user-images.githubusercontent.com/74820572/112309310-8c59e380-8ce6-11eb-95e6-b1f910da288d.png" ><br>
+
+<img width="" alt="login" src="https://user-images.githubusercontent.com/74820572/112309305-8b28b680-8ce6-11eb-8c83-dfe2feea7c75.png"><br>
+
 #### ・投稿機能
+![sweettooth post](https://user-images.githubusercontent.com/74820572/112309326-8fed6a80-8ce6-11eb-939a-bb5df9bafcbf.gif)<br>
+
 #### ・投稿編集機能
+![sweettooth edit](https://user-images.githubusercontent.com/74820572/112309708-01c5b400-8ce7-11eb-9d5f-073cbee631d9.gif)<br>
 #### ・投稿削除機能
+![sweettooth delete](https://user-images.githubusercontent.com/74820572/112311455-12772980-8ce9-11eb-994c-95e5b666a73d.gif)<br>
 #### ・コメント機能
-#### ・yummy！（いいね）機能
+![sweettooth comment](https://user-images.githubusercontent.com/74820572/112311464-160ab080-8ce9-11eb-8c74-a2c8841bec8c.gif)<br>
+#### ・投稿検索機能
+![serach](https://user-images.githubusercontent.com/74820572/112313042-c927d980-8cea-11eb-91c3-df9a69fd6e4f.jpg)
+
+
+<br>
 
 ## URL https://sweet-tooth-2021.herokuapp.com/
+<br>
 
 
-## テスト用アカウント
-#### Basic認証
-#### ID：sweettooth
-#### Pass:20210310
+||Basic認証|テスト用アカウント|テストユーザー1|テストユーザー2|
+|---|---|---|---|---|
+|ID|sweettooth|-----|-----|
+|email|-----|test@test.co.jp|aaaa@co.jp|
+|Pass|20210310|test123|aaa123|
+<br>
 
-#### テストユーザー1
-#### email:test@test.co.jp
-#### Pass:test123
-
-#### テストユーザー2
-#### email:aaaa@co.jp
-#### Pass:aaa123
 
 ## 目指した課題解決
 #### ・スイーツに特化したSNSが欲しい
 #### ・画像はあるが再度、購入・利用したいと思った時に商品名、金額、店舗名など情報が思い出せない
 #### ・最新スイーツの情報収集や投稿で気になったスイーツがある店舗名、その金額が知りたい
 
+<br>
+
 ## 要件定義
-|優先順位<br>（高：3、中：2、低：1）|機能                 |目的                               |詳細|ユーザーストーリー|見積もり時間（所要時間）|
-|-------------------------|--------------------|-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+|優先順位<br>（高：3、中：2、低：1）|機能|目的|詳細|ユーザーストーリー|見積もり時間（所要時間）|
+|-----|-----|-----|-----|-----|-----|
 |3                        |ユーザー管理機能       |ユーザー登録をするため                  |ユーザー情報を入力し登録する。<br>登録したユーザーが登録したメールアドレス、パスワードのみでログインができる。|・ユーザー情報を登録していないと投稿、編集、削除、コメントができな<br>・ユーザー情報を登録していると投稿、編集、削除、コメントができる|8|
 ||                    |                                   |
 |3|投稿機能             |投稿をするため                        |投稿したい画像を選択し、商品名、金額、購入又は利用店舗、投稿に対してのコメント（任意）を入力し投稿ボタンを押すと投稿することができる。|・ユーザー登録をしていないと投稿ボタンが表示されない<br>・ユーザー登録をすると投稿ボタンが表示され、クリックすると投稿画面に遷移できる<br>・ユーザー登録をしていると投稿することができる|8|
@@ -54,24 +73,53 @@
 ||                    |                                   |
 |1|投稿Yummy!(いいね機能) |投稿に評価できるようにするため            |投稿詳細のいいねボタンを押すと数が表示され投稿の評価ができる|・ユーザー登録をしていなといいねが押せない<br>・ユーザー登録をしているといいねが押せる<br>・ユーザー登録をしているといいねの解除ができる|5|
 
+<br>
 
-##実装した機能について
+## 実装した機能について
+#### ユーザー新規登録
+![signup test](https://user-images.githubusercontent.com/74820572/112415467-324d3280-8d67-11eb-9fd4-0149c938ffec.gif)
+#### ユーザーログイン
+![login test](https://user-images.githubusercontent.com/74820572/112415432-25c8da00-8d67-11eb-95b1-972f124f8e95.gif)
+#### 新規投稿
+![post test](https://user-images.githubusercontent.com/74820572/112422229-e2c13380-8d73-11eb-8cf6-355ad6b5978d.gif)
 
- 
+#### 投稿詳細
+![show test](https://user-images.githubusercontent.com/74820572/112415459-2fead880-8d67-11eb-81b7-6778484a56c8.gif)
+#### ユーザー投稿一覧
+![user index](https://user-images.githubusercontent.com/74820572/112415488-38dbaa00-8d67-11eb-96b5-031fd739c939.gif)
+#### 投稿編集
+![edit test](https://user-images.githubusercontent.com/74820572/112415401-1c3f7200-8d67-11eb-9f29-2db114a94a7d.gif)
+#### 投稿削除
+![delete test](https://user-images.githubusercontent.com/74820572/112415399-1ba6db80-8d67-11eb-8a93-caad8f27eaef.gif)
+#### コメント投稿
+![comment test](https://user-images.githubusercontent.com/74820572/112415378-134ea080-8d67-11eb-8f68-6bcce47c8dcd.gif)
+#### 投稿検索
+![search test](https://user-images.githubusercontent.com/74820572/112415450-2c575180-8d67-11eb-9f22-ae2c266c8ad8.gif)
+<br>
 
-## users テーブル
+## 実装予定の機能
+- いいね機能
+- ユーザーフォロー機能
 
+
+<br>
+
+
+<br>
+
+## テーブル設計
+#### users テーブル
 | Column        | Type      | Options     |
 | --------------| ----------| ------------|
 | nickname      | string    | null: false |
 | email         | string    | null: false |
 
-### Association
+#### Association
 
 - has_many :sweets
 - has_many :comments
 
-## sweets テーブル
+#### sweets テーブル
 
 | Column          | Type       | Options          |
 | ----------------| -----------| -----------------|
@@ -82,12 +130,12 @@
 | user            | references | foreign_key:true |
 
 
-### Association
+#### Association
 
 - belongs_to :user
 - has_many   :comments
 
-## comments テーブル
+#### comments テーブル
 
 | Column          | Type       | Options          |
 | ----------------| -----------| -----------------|
@@ -95,7 +143,31 @@
 | user            | references | foreign_key:true |
 | sweet            | references | foreign_key:true |
 
-### Association
+#### Association
 
 - belongs_to :user
 - belongs_to :sweet
+
+<br>
+
+## ローカル環境での動作
+
+```ruby
+% git clone https://github.com/mitsuru-sekiguchi/sweet_tooth-2021.git
+% cd sweet_tooth-2021
+% bundle install
+% yarn install
+% rails db:create
+% rails db:migrate
+% rails s
+```
+
+
+<br>
+
+## 開発環境
+- Rails '6.0.3.5'
+- Ruby '2.6.5'
+- Yarn '1.22.10'
+- Bundler '2.1.4'
+- VScode
