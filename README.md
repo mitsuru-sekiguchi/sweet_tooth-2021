@@ -19,14 +19,14 @@
 <img width="" alt="login" src="https://user-images.githubusercontent.com/74820572/112309305-8b28b680-8ce6-11eb-8c83-dfe2feea7c75.png"><br>
 
 #### ・投稿機能
-![sweettooth post](https://user-images.githubusercontent.com/74820572/112309326-8fed6a80-8ce6-11eb-939a-bb5df9bafcbf.gif)<br>
+![post](https://user-images.githubusercontent.com/74820572/112450283-9687ea80-8d97-11eb-9394-a0bb532e6068.jpg)<br>
 
 #### ・投稿編集機能
-![sweettooth edit](https://user-images.githubusercontent.com/74820572/112309708-01c5b400-8ce7-11eb-9d5f-073cbee631d9.gif)<br>
+![edit](https://user-images.githubusercontent.com/74820572/112450816-2168e500-8d98-11eb-873b-6b8f85239116.jpg)<br>
 #### ・投稿削除機能
-![sweettooth delete](https://user-images.githubusercontent.com/74820572/112311455-12772980-8ce9-11eb-994c-95e5b666a73d.gif)<br>
+![sweettooth delete]![delete](https://user-images.githubusercontent.com/74820572/112450810-1f9f2180-8d98-11eb-9d4a-4c2922e62691.jpg)<br>
 #### ・コメント機能
-![sweettooth comment](https://user-images.githubusercontent.com/74820572/112311464-160ab080-8ce9-11eb-8c74-a2c8841bec8c.gif)<br>
+<img width="1426" alt="comment" src="https://user-images.githubusercontent.com/74820572/112450808-1e6df480-8d98-11eb-9aa7-912c340487b3.png"><br>
 #### ・投稿検索機能
 ![serach](https://user-images.githubusercontent.com/74820572/112313042-c927d980-8cea-11eb-91c3-df9a69fd6e4f.jpg)
 
@@ -37,8 +37,8 @@
 <br>
 
 
-||Basic認証|テスト用アカウント|テストユーザー1|テストユーザー2|
-|---|---|---|---|---|
+||Basic認証|テストユーザー1|テストユーザー2|
+|---|---|---|---|
 |ID|sweettooth|-----|-----|
 |email|-----|test@test.co.jp|aaaa@co.jp|
 |Pass|20210310|test123|aaa123|
