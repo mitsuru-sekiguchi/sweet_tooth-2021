@@ -44,10 +44,12 @@ ActiveRecord::Schema.define(version: 2021_03_23_062709) do
   end
 
   create_table "likes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "sweet_id"
+    t.bigint "user_id"
+    t.bigint "sweet_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["sweet_id"], name: "index_likes_on_sweet_id"
+    t.index ["user_id"], name: "index_likes_on_user_id"
   end
 
   create_table "sweets", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -77,5 +79,7 @@ ActiveRecord::Schema.define(version: 2021_03_23_062709) do
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "comments", "sweets"
   add_foreign_key "comments", "users"
+  add_foreign_key "likes", "sweets"
+  add_foreign_key "likes", "users"
   add_foreign_key "sweets", "users"
 end

@@ -105,11 +105,15 @@
 }
 .item-name{
   color: #535d58;
+  font-size: 25px;
   width: 320px;
   padding-left: 10px;
   border-style: outset;
   font-family: 'Philosopher', serif;
   text-transform: none;
+}
+.item-created_at{
+  font-size: 15px;
 }
 .item-content {
   margin: 0 auto;
@@ -118,6 +122,16 @@
   text-align: end;
   padding-right: 10px;
   padding-top: 10px;
+}
+/* いいねボタン
+-------------------------------- */
+.fa-grin-stars {
+  color:chocolate;
+  font-size: 25px;
+}
+.fa-smile {
+  color: chocolate;
+  font-size: 25px;
 }
 
 

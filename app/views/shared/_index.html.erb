@@ -1,20 +1,18 @@
 <div class="grid">
     <% @sweet.each do |sweet| %>
       <div class="item-content">
+        <% if sweet.image.attached? %>
           <%= link_to image_tag(sweet.image.variant(combine_options:{gravity: :center, resize:"320x320^",crop:"320x320+0+0"}).processed,class:"img-grid"), sweet_path(sweet.id) %>
+        <% end %>
         <div class="item-name">
               <%= sweet.name %>
           <div class="item-created_at">
                投稿日：<%= sweet.created_at.strftime('%Y/%m/%d') %>
           </div>
-            <tr>
-              <% if current_user.liked_by?(sweet.id) %>
-                <td><%= link_to 'yummy!', destroy_like_path(sweet), method: :DELETE %><%= sweet.likes.count %></td>
-              <% else %>
-                <td><%= link_to 'yummy！', create_like_path(sweet), method: :POST %><%= sweet.likes.count %></td>
-              <% end %>
-            </tr>
+            <div id="like_<%= sweet.id %>">
+              <%= render "sweet", sweet: sweet %>
+            </div>
         </div>
       </div>
     <% end %>
-  </div><!-- /.grid -->
+</div><!-- /.grid -->

@@ -1,0 +1,13 @@
+  <% if user_signed_in? %>
+   <% if current_user.liked_by?(sweet.id) %>
+      <%= link_to destroy_like_path(sweet), class:"like-link", method: :DELETE, remote: true do %>
+      <i class="far fa-grin-stars"></i>
+    <% end %>
+    <%= sweet.likes.count %>
+    <% else %>
+      <%= link_to create_like_path(sweet), class:"like-link", method: :POST, remote: true do %>
+      <i class="far fa-smile"></i>
+    <% end %>
+    <%= sweet.likes.count %>
+   <% end %>
+  <% end %>
