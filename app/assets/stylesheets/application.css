@@ -165,7 +165,12 @@ label {
 }
 .sub-title {
   color: aliceblue;
-  margin-left: 10px;
+}
+.up-img {
+  width: 25%;
+  margin-top: 10px;
+  border-style: outset;
+  border-radius: 5px;
 }
 /* 投稿編集画面
 ------------------------------- */
