@@ -9,7 +9,7 @@
 ----
 スイーツ専用の投稿サイト。
 ユーザー登録をすることにより投稿が可能になる。投稿画面では商品名、金額、店舗名が入力必須となっており、理由として情報収集や飲食店探し、自身の記録としてまた行きたいと思った時に確認出来るようにするためにその情報を必須としている。
-その他、投稿へのコメントや検索することが可能。
+その他、投稿へのコメントや検索、いいね機能することが可能。
 
 <br>
 
@@ -152,7 +152,7 @@
 
 ## 目指した課題解決
 ----
-#### ・多彩なジャンルではなくスイーツだけの投稿を見れるようにすること
+#### ・スイーツ好きのための特化したSNSを必要とする人のため
 #### ・画像はあるが再度、購入・利用したいと思った時に商品名、金額、店舗名など情報が思い出せないときに確認できること
 #### ・最新スイーツの情報や投稿で気になったスイーツがある店舗名、その金額が知りたいときに確認できること
 
@@ -224,6 +224,7 @@
 - Ruby '2.6.5'
 <br>
 <br>
+
 #### フロントエンド
 ----
 - HTML
@@ -269,6 +270,7 @@
 
 - has_many :sweets
 - has_many :comments
+- has_many :likes
 
 #### sweets テーブル
 
@@ -285,6 +287,7 @@
 
 - belongs_to :user
 - has_many   :comments
+- has_many   :likes
 
 #### comments テーブル
 
@@ -293,6 +296,18 @@
 | text            | text       | null: false      |
 | user            | references | foreign_key:true |
 | sweet            | references | foreign_key:true |
+
+#### Association
+
+- belongs_to :user
+- belongs_to :sweet
+
+#### likes テーブル
+
+| Column          | Type       | Options          |
+| ----------------| -----------| -----------------|
+| user            | references | foreign_key:true |
+| sweet           | references | foreign_key:true |
 
 #### Association
 
