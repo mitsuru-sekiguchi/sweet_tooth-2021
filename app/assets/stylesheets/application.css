@@ -265,38 +265,106 @@ footer p {
 /* タブレット表示時
 _______________________________*/
 @media (max-width: 1024px) {
+  /* 新規登録 */
   .signup-body {
-    width: 1024px;
+    width: 100vw;
   }
+  .signup-title {
+    font-size: 80px;
+    padding-top: 60px;
+  }
+  .signup-btn {
+    margin-top: 60px;
+    padding: 20px 60px;
+  }
+  /* ログイン */
+  .login-title{
+    font-size: 80px;
+    padding-top: 60px;
+  }
+  .login-btn{
+    margin-top: 60px;
+    padding: 20px 60px;
+  }
+  /* 新規投稿 */
   .new-body {
-    width: 1024px;
+    width: 100vw;
     margin: 0 auto;
   }
-
+  .sweets-title {
+    font-size: 80px;
+    padding-top: 60px;
+  }
+  .sub-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
   .img-upload {
     font-size: 15px;
   }
+  input#sweet_name {
+    margin-top: 30px;
+    height: 100px;
+  }
+  input#sweet_price {
+    margin-top: 20px;
+    height: 100px;
+  }
+  input#sweet_shop_info {
+    margin-top: 20px;
+    height: 100px;
+  }
+  textarea#sweet_text {
+    margin-top: 20px;
+  }
+  .post-btn {
+    margin-top: 60px;
+    padding: 20px 60px;
+  }
   .name-content {
     margin-top: 10px;
+  }
+  /* 編集 */
+  .edit-title{
+    font-size: 80px;
+    padding-top: 60px;
+  }
+  .edit-sub-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .edit-page-btn {
+    margin-top: 60px;
+    padding: 20px 60px;
+  }
+  /* フォーム */
+  label {
+    font-size: 60px;
+  }
+  .field {
+    margin-top: 60px;
   }
   input[type="text"],
   input[type="email"],
   input[type="password"] {
     font-size: 20px;
+    height: 80px;
   }
   textarea {
     width: 480px;
     height: 300px;
     font-size: 20px;
   }
+  /* フッター */
   footer {
-    width: 100vw;
+    width: 100%;
   }
 }
 /* スマホ表示時
 _____________________________*/
 @media (max-width: 599px) {
   /* トップページ */
+  /* ヘッダー */
   a {
     font-size: 10px;
   }
@@ -304,9 +372,12 @@ _____________________________*/
     font-size: 0.5rem;
     margin: 0 auto;
   }
+  input {
+    font-size: 20px;
+  }
   .logo {
-    width: 100px;
-    height: 50px;
+    width:120px;
+    height: 60px;
   }
   .login {
    padding: 10px 20px;
@@ -325,23 +396,27 @@ _____________________________*/
   .main-nav li{
     margin: 5px;
   }
+  /* メイン */
   .body {
     width: 100%;
   }
   .page-title {
-    font-size: 1rem;
+    font-size: 1.5rem;
+    margin: 0 30px;
   }
   .top-post-button {
-    font-size: 15px;
-    padding: 10px 20px;
+    font-size: 10px;
+    padding: 7px 25px;
+    margin: 0 auto;
   }
   .main-content {
     padding: 0;
   }
   input.search-btn {
-    margin: 0 20px;
-    font-size: 15px;
-    padding: 15px 10px;
+    height: 30px;
+    margin: 0 25px 0 10px;
+    font-size: 10px;
+    padding: 0;
   }
   .search-input {
     font-size: 10px;
@@ -352,13 +427,25 @@ _____________________________*/
     margin-top: 10px;
     margin-bottom: 10px;
   }
-  .sweets-title{
-    font-size: 4rem;
+  input#keyword.search-input{
+    height: 40px;
+    margin-left: 30px;
+    font-size: 10px;
   }
+  /* フォーム */
   input[type="text"],
   input[type="email"],
   input[type="password"] {
-    font-size: 15px;
+    height: 3.5rem;
+    font-size: 20px;
+  }
+  label {
+    font-size: 25px;
+  }
+  textarea {
+    width: 340px;
+    height: 300px;
+    font-size: 20px;
   }
   /* 新規登録 */
   .signup-body {
@@ -367,10 +454,16 @@ _____________________________*/
     margin: 0 auto;
   }
   .signup-contents{
-    padding-left: 10px;
+    padding: 20px;
+  }
+  .signup-title{
+    padding-top: 100px;
+    font-size: 30px;
   }
   .signup-btn {
-    margin-bottom: 30px;
+    padding: 10px 30px;
+    font-size: 10px;
+    margin:30px 0;
   }
   /* ログイン */
   .login-body{
@@ -380,35 +473,45 @@ _____________________________*/
   }
   .login-contents{
     width: 100vw;
-    padding-left: 10px;
+    padding: 0 20px;
   }
   .login-title{
-    padding-top: 10px;
-    padding-bottom: 50px;
+    padding-top: 150px;
+    padding-bottom: 20px;
+    font-size: 30px;
   }
+  .login-btn{
+    font-size: 10px;
+    padding: 10px 35px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
   /* 新規投稿 */
   .sweets-title{
-    font-size: 50px
+    padding-top: 60px;
+    font-size: 30px
   }
   .sub-title{
-    font-size: 20px;
+    font-size: 15px;
   }
   .new-contents {
-    padding-left: 10px;
+    width: 100vw;
+    padding: 0 20px;
   }
   .new-body {
     width: 100vw;
     height: 100%;
     margin: 0 auto;
-    font-size: 1.5rem;
+  }
+  input#sweet_image {
+    font-size: 15px;
   }
   .post-btn{
-    font-size: 15px;
-    margin-bottom: 30px;
-    padding: 10px 30px;
-  }
-  textarea {
-    width: 100vw;
+    font-size: 10px;
+    padding: 8px 25px;
+    margin-top: 30px;
+    margin-bottom: 60px;
   }
   /* 詳細ページ */
   .sweet-box-img {
@@ -424,20 +527,22 @@ _____________________________*/
   }
   .more-list {
     width: 90vw;
+    margin: 0 auto;
   }
   .show-sweet-edit-btn {
-    font-size: 15px;
-    padding: 10px 40px;
+    font-size: 10px;
+    padding: 8px 35px;
     margin-right: 50px;
     margin-bottom: 20px;
   }
   .destroy-btn {
-    font-size:15px;
-    padding: 10px 40px;
+    font-size:10px;
+    padding: 8px 35px;
     margin-bottom: 20px;
   }
   .comment-btn {
-    padding: 10px 20px;
+    padding: 8px 15px;
+    font-size: 10px;
   }
   .another-sweet {
     font-size: 20px;
@@ -445,9 +550,18 @@ _____________________________*/
   }
   /* 編集 */
   .edit-contents{
-    padding-left: 10px;
+    padding: 0 20px;
+  }
+  .edit-title{
+    padding-top: 60px;
+    font-size: 30px;
+  }
+  .edit-sub-title{
+    font-size: 10px;
   }
   .edit-page-btn {
+    font-size: 10px;
+    padding: 8px 24px;
     margin-bottom: 30px;
   }
   /* 投稿一覧 */
@@ -462,7 +576,7 @@ _____________________________*/
   }
   /* フッター */
   footer {
-    width: 100%;
+    width: 100vw;
   }
 
 }
