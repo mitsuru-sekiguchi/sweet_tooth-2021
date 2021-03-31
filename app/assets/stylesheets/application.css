@@ -270,16 +270,16 @@ _______________________________*/
     width: 100vw;
   }
   .signup-title {
-    font-size: 80px;
+    font-size: 60px;
     padding-top: 60px;
   }
   .signup-btn {
-    margin-top: 60px;
+    margin: 60px 0;
     padding: 20px 60px;
   }
   /* ログイン */
   .login-title{
-    font-size: 80px;
+    font-size: 60px;
     padding-top: 60px;
   }
   .login-btn{
@@ -292,11 +292,11 @@ _______________________________*/
     margin: 0 auto;
   }
   .sweets-title {
-    font-size: 80px;
+    font-size: 60px;
     padding-top: 60px;
   }
   .sub-title {
-    font-size: 30px;
+    font-size: 20px;
     margin-bottom: 20px;
   }
   .img-upload {
@@ -318,7 +318,7 @@ _______________________________*/
     margin-top: 20px;
   }
   .post-btn {
-    margin-top: 60px;
+    margin: 60px 0;
     padding: 20px 60px;
   }
   .name-content {
@@ -326,23 +326,23 @@ _______________________________*/
   }
   /* 編集 */
   .edit-title{
-    font-size: 80px;
+    font-size: 60px;
     padding-top: 60px;
   }
   .edit-sub-title {
-    font-size: 30px;
+    font-size: 20px;
     margin-bottom: 20px;
   }
   .edit-page-btn {
-    margin-top: 60px;
+    margin: 60px 0;
     padding: 20px 60px;
   }
   /* フォーム */
   label {
-    font-size: 60px;
+    font-size: 30px;
   }
   .field {
-    margin-top: 60px;
+    margin-top: 30px;
   }
   input[type="text"],
   input[type="email"],

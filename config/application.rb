@@ -17,4 +17,5 @@ module SweetTooth2021
     # the framework and any gems in your application.
     config.action_view.field_error_proc = Proc.new { |html_tag, instance| html_tag }
   end
+  Rails.application.config.active_storage.variant_processor
 end
