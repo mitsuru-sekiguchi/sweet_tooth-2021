@@ -89,7 +89,6 @@
   width: 160px;
   font-size: 20px;
   border-radius: 5px;
-  margin-top: 10px;
   margin-left: 30px;
   padding: 10px 30px;
 }
@@ -102,6 +101,9 @@
   gap: 15px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin: 30px 30px;
+}
+.img-grid {
+  width: 100%;
 }
 .item-name{
   color: #535d58;
