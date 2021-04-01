@@ -8,7 +8,7 @@ class Sweet < ApplicationRecord
     validates :name
     validates :price, format: { with: /([0-9].*[0-9])/ }
     validates :shop_info
-    validates :image_content_type, if: :was_attached?
+    validates :image, unless: :was_attached?
   end
 
   def image_content_type
