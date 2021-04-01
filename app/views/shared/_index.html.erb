@@ -2,7 +2,9 @@
     <% @sweet.each do |sweet| %>
       <div class="item-content">
         <% if sweet.image.variable? %>
-          <%= link_to image_tag(sweet.image.variant(gravity: :center, resize:"320x320^",crop:"320x320+0+0").processed,class:"img-grid"), sweet_path(sweet.id) %>
+          <%= link_to sweet_path(sweet.id) do %>
+            <%= image_tag(sweet.image.variant(gravity: :center, resize:"320x320^",crop:"320x320+0+0").processed,class:"img-grid") %>
+          <% end%>
         <% end %>
         <div class="item-name">
               <%= sweet.name %>
