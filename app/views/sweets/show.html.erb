@@ -5,7 +5,7 @@
   </div>
   <div class="show-contents">
     <div class="sweet-img-content">
-        <%= image_tag @sweet.image.variant(resize:"600x600^",crop:"600x600+0+0").processed, class:"sweet-box-img" %>
+        <%= image_tag @sweet.image.variant(resize:"600x600^").processed, class:"sweet-box-img" %>
     </div><br/>
 
     <% if user_signed_in?  %>
