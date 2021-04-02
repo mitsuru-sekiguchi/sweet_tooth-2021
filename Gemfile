@@ -63,6 +63,7 @@ gem 'image_processing', '~> 1.2'
 gem 'rack', '~> 2.0.8'
 gem 'font-awesome-rails'
 gem "aws-sdk-s3", require: false
+gem "mimemagic", "~> 0.3.10"
 
 group :production do
   gem 'unicorn', '5.4.1'
