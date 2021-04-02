@@ -538,6 +538,7 @@ _____________________________*/
   /* 詳細ページ */
   .sweet-box-img {
     width: 100vw;
+    height: 50%;
   }
   .show-title {
     font-size: 25px;
@@ -550,6 +551,15 @@ _____________________________*/
   .more-list {
     width: 90vw;
     margin: 0 auto;
+  }
+  th.detail-sweet {
+    font-size: 10px;
+  }
+  th.detail-sweet-text {
+    font-size: 10px;
+  }
+  th.detail-sweet-comment {
+    font-size: 15px;
   }
   .show-sweet-edit-btn {
     font-size: 10px;
@@ -567,8 +577,8 @@ _____________________________*/
     font-size: 10px;
   }
   .another-sweet {
-    font-size: 20px;
-    margin:  10px;
+    font-size: 15px;
+    margin:  20px;
   }
   /* 編集 */
   .edit-contents{
