@@ -21,7 +21,7 @@ html {
   font-size: 100%;
 }
 .index {
-  background: url('syukuhuku.jpg') center top no-repeat;
+  background: url(<%= asset_path 'syukuhuku.jpg' %>) center top no-repeat;
   background-size: cover;
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
   line-height: 1.7;
@@ -108,7 +108,7 @@ label {
 /* ログイン画面
 ------------------------------- */
 .login-body {
-  background: url('chococake.jpg') center top no-repeat;
+  background: url(<%= asset_path 'chococake.jpg' %>) center top no-repeat;
   background-size: cover;
   font-family: 'Philosopher', serif;
 }
@@ -132,7 +132,7 @@ label {
 /* 新規登録画面
 ------------------------------- */
 .signup-body {
- background: url('ice.jpg') center top no-repeat;
+ background: url(<%= asset_path 'ice.jpg' %>) center top no-repeat;
  background-size: cover;
  font-family: 'Philosopher', serif;
 }
@@ -157,7 +157,7 @@ label {
 /* 新規投稿画面
 ------------------------------- */
 .new-body {
-  background: url('sweets.photo.jpg') center top no-repeat;
+  background: url(<%= asset_path 'sweets.photo.jpg' %>) center top no-repeat;
   background-size: cover;
   font-family: 'Philosopher', serif;
 }
@@ -189,7 +189,7 @@ label {
   margin-left: 10px;
 }
 .edit-body {
-  background: url('cake4.jpg') center top no-repeat;
+  background: url(<%= asset_path 'cake4.jpg' %>) center top no-repeat;
   background-size: cover;
   font-family: 'Philosopher', serif;
 }
