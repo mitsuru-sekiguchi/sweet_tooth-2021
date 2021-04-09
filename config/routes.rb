@@ -1,7 +1,16 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, controllers: {
+    registrations: 'users/registrations',
+    passwords: 'users/passwords'
+  }
   get 'sweets/index'
   root to: "sweets#index"
+
+  post '/index/guest_sign_in', to: 'index#guest_sign_in'
+
+  devise_scope :user do
+    post 'user/guest_sign_in', to: 'users/sessions#guest_sign_in'
+  end
 
   resources :sweets do
     resources :comments, only: :create

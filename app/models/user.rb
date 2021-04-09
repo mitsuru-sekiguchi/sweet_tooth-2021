@@ -14,4 +14,11 @@ class User < ApplicationRecord
   def liked_by?(sweet_id)
     likes.where(sweet_id: sweet_id).exists?
   end
+
+  def self.guest
+    find_or_create_by!(email: 'guest@example.com') do |user|
+      user.password = SecureRandom.urlsafe_base64
+      user.nickname = 'ゲスト'
+    end
+  end
 end
