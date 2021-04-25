@@ -69,6 +69,7 @@ gem 'rack', '~> 2.0.8'
 gem 'font-awesome-rails'
 gem "aws-sdk-s3", require: false
 gem "mimemagic", "~> 0.3.10"
+gem "dotenv-rails"
 
 group :production do
   gem 'unicorn', '5.4.1'

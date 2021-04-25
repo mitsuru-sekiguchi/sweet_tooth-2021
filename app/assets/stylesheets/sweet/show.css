@@ -16,7 +16,7 @@
   color: chocolate;
   font-family: 'Philosopher', serif;
   text-transform: none;
-  margin: 50px 100px;
+  margin: 80px 100px;
 }
 .sweet-img-content {
   margin:10px 80px;
@@ -123,7 +123,10 @@
 }
 .another-sweet {
   color: chocolate;
-  margin: 30px;
+  text-decoration: underline;
+  text-decoration-style: double;
+  text-decoration-color: chocolate;
+  margin: 50px;
 
 }
 .another-sweet:hover {
@@ -158,4 +161,52 @@
 }
 .destroy-btn:hover {
   background-color: brown;
+}
+.map-content {
+  font-family: 'Philosopher', serif;
+}
+.map-form {
+  border-style: outset;
+  margin: 30px auto;
+  height: 67px;
+  width: 90%;
+  padding: 20px;
+  border-radius: 5px;
+  color: #535d58;
+  font-size: 20px;
+ }
+ .map-name {
+   width: 100%;
+
+ }
+ .map-btn {
+   text-align: center;
+ }
+ .btn {
+   background-color: chocolate;
+   color: whitesmoke;
+   font-size: 20px;
+   border-radius: 5px;
+   margin: 0 auto;
+   padding: 16px 32px;
+ }
+ .btn:hover {
+   background-color: brown;
+ }
+
+.shop-title {
+  font-family: 'Philosopher', serif;
+  font-size: 1.2rem;
+  color: chocolate;
+  text-align: center;
+  margin-bottom: 30px;
+}
+#display {
+  text-align: center;
+}
+#map {
+  margin: 50px auto;
+  border-style: ridge;
+  height: 500px;
+  width: 80vw;
 }
