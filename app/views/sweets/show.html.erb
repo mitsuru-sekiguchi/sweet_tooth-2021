@@ -34,7 +34,12 @@
       </tr>
       <tr>
         <th class="detail-sweet">購入/<br/>利用店舗</th>
-        <td class="detail-value"><%= @sweet.shop_info %></td>
+        <td class="detail-value"><%= @sweet.shop_info %><br>
+        <div class="link-content">
+         <p><%= link_to 'Google検索','https://www.google.com/', target: :_blank %></p>
+         <p><%= link_to '地図検索', anchor: 'shop-title' %></p>
+        </div>
+        </td>
       </tr>
       <tr>
         <th class="detail-sweet-text">商品紹介</th>
