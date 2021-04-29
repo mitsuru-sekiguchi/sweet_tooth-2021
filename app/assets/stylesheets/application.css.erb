@@ -49,6 +49,18 @@ label {
 .field {
   margin-top: 10px;
 }
+.notification:not(:last-child){
+  background-color: skyblue;
+  color: whitesmoke;
+  font-family: 'Philosopher', serif;
+  padding-left: 10px;
+  margin-bottom: 0;
+}
+.notification.is-danger{
+  background-color: #de4d4d;
+  color: whitesmoke;
+  padding-left: 30px;
+}
 /* ヘッダー
 ------------------------------- */
 .guest {
@@ -152,14 +164,21 @@ label {
   font-size: 30px;
   border-radius: 5px;
   padding: 18px 40px;
-  margin-bottom: 10px;
-  margin-top: 20px
+  margin: 40px 0;
 }
 .signup-title {
   color: #432;
   font-size: 50px;
   padding-top: 10px;
   padding-bottom: 20px;
+}
+.pagelink {
+  font-size: 20px;
+  padding-left: 80px;
+  color: chocolate;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-color: chocolate;
 }
 /* 新規投稿画面
 ------------------------------- */

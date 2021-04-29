@@ -1,5 +1,13 @@
 <body class="signup-body">
-
+<% if @user.errors.any? %>
+  <div class="notification is-danger">
+    <h2><%= pluralize(@user.errors.count, "error") %> prohibited this object from being saved: not successfully</h2>
+    <ul>
+      <% @user.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+   <% end %>
+  </div>
+<% end %>
 <div class="signup-contents">
   <div class="container">
     <h2 class="signup-title">Sign up</h2>
@@ -26,6 +34,7 @@
 
       <div class="actions">
         <%= f.submit "Sign up", class:"signup-btn" %>
+        <%= link_to 'Back to top page', root_path, class:'pagelink',data: {confirm: "トップページへ戻りますか？"} %>
       </div>
     <% end %>
   </div>

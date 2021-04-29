@@ -1,5 +1,15 @@
 <body class="login-body">
+<% if flash[:notice] %>
+  <div class="notification is-info">
+    <p class="notice"><%= notice %></p>
+  </div>
+<% end %>
 
+<% if flash[:alert] %>
+  <div class="notification is-danger">
+    <p class="alert"><%= alert %></p>
+  </div>
+<% end %>
 <div class="login-contents">
   <div class="container">
     <h2 class="login-title">Log in</h2>
@@ -14,6 +24,7 @@
       </div>
       <div class="actions">
         <%= f.submit "Log in", class:"login-btn" %>
+        <%= link_to 'Back to top page', root_path, class:'pagelink',data: {confirm: "トップページへ戻りますか？"} %>
       </div>
     <% end %>
   </div>

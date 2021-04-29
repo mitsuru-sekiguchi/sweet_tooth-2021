@@ -33,8 +33,8 @@ class SweetsController < ApplicationController
   end
 
   def update
-    sweet = Sweet.find(params[:id])
-    if sweet.update(sweet_params)
+    @sweet = Sweet.find(params[:id])
+    if @sweet.update(sweet_params)
       redirect_to sweet_path
     else
       render :edit

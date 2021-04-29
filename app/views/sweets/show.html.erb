@@ -13,7 +13,7 @@
       <% if current_user.id == @sweet.user_id %>
         <div class="more-list">
           <%= link_to "編集", edit_sweet_path(@sweet.id), method: :get, class:"show-sweet-edit-btn" %>
-          <%= link_to "削除",sweet_path(@sweet.id), method: :delete, class:"destroy-btn" %>
+          <%= link_to "削除",sweet_path(@sweet.id), method: :delete, data: {confirm: "削除しますか？"}, class:"destroy-btn" %>
         </div>
       <% end %>
     <% end %>
@@ -47,7 +47,9 @@
       </tr>
      </tbody>
     </table>
-
+    <div class="upload-time">
+     <time><%= @sweet.updated_at.strftime("%Y-%m-%d %H:%M") %></time>(更新)
+    </div>
     <table class="detail-comment-table">
      <tbody>
       <tr>
@@ -83,6 +85,9 @@
   </div>
  </div>
 <%= render "shared/map" %>
+<div class='top-link'>
+  <%=link_to '🔝', anchor: 'logo' %>
+</div>
 <%= render "shared/footer" %>
 
 </body>

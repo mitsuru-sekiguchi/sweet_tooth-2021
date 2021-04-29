@@ -130,7 +130,7 @@
 .another-sweet {
   color: chocolate;
   text-decoration: underline;
-  text-decoration-style: double;
+  text-decoration-style: solid;
   text-decoration-color: chocolate;
   margin: 50px;
 
@@ -167,6 +167,10 @@
 }
 .destroy-btn:hover {
   background-color: brown;
+}
+.upload-time {
+  text-align: end;
+  margin-bottom: 10px;
 }
 .map-content {
   font-family: 'Philosopher', serif;

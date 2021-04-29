@@ -1,0 +1,9 @@
+<% if @sweet.errors.any? %>
+  <div class="notification is-danger">
+    <h2><%= pluralize(@sweet.errors.count, "error") %> prohibited this object from being saved: not successfully</h2>
+    <ul>
+      <% @sweet.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+   <% end %>
+  </div>
+<% end %>

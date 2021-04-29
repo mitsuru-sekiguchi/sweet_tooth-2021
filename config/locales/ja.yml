@@ -1,0 +1,10 @@
+ja:
+  activerecord:
+    attributes:
+      user:
+        nickname: Nickname
+      sweet:
+        name: 商品名
+        price: 価格
+        shop_info: 購入店舗または利用店舗
+        image: 画像

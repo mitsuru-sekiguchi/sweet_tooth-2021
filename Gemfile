@@ -70,6 +70,7 @@ gem 'font-awesome-rails'
 gem "aws-sdk-s3", require: false
 gem "mimemagic", "~> 0.3.10"
 gem "dotenv-rails"
+gem 'rails-i18n'
 
 group :production do
   gem 'unicorn', '5.4.1'

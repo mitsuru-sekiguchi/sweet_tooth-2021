@@ -1,3 +1,4 @@
+<%= render "shared/error_message" %>
 <body class="edit-body">
 
 <div class="edit-contents">
@@ -20,6 +21,7 @@
         <%= form.text_area :text, placeholder: "text", placeholder: "商品説明※記入なしでもOK" %>
       </div>
       <%= form.submit " 変更する", class:"edit-page-btn"%>
+      <%= link_to 'Back to page', sweet_path(@sweet.id), class:'pagelink',data: {confirm: "前のページへ戻りますか？"} %>
     <% end %>
 </div>
 
